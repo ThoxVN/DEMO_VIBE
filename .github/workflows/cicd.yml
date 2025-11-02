@@ -1,0 +1,47 @@
+name: CI/CD Pipeline
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4
+
+    - name: Setup Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '20'
+
+    - name: Install Salesforce CLI
+      run: |
+        curl https://developer.salesforce.com/media/salesforce-cli/sfdx/channels/stable/sfdx-linux-x64.tar.xz | tar xJf - -C /tmp
+        sudo /tmp/sfdx/bin/sfdx --version
+
+    - name: Install dependencies
+      run: npm install
+
+    - name: Deploy source to scratch org
+      run: |
+        sfdx org create scratch -f config/project-scratch-def.json -a scratch-org --set-default --duration-days 1
+        sfdx project deploy start --source-dir force-app/main/default --target-org scratch-org
+
+    - name: Run Apex tests
+      run: |
+        sfdx apex run test --class-names TodoControllerTest --target-org scratch-org --result-format human --code-coverage
+
+    - name: Deploy to production (if on main branch)
+      if: github.ref == 'refs/heads/main'
+      run: |
+        # Example deployment to production (replace with your prod org alias)
+        # sfdx project deploy start --source-dir force-app/main/default --target-org prod-org
+        echo "Deployment to production skipped in this demo"
+
+    - name: Cleanup scratch org
+      if: always()
+      run: |
+        sfdx org delete scratch -o scratch-org --noprompt

@@ -1,0 +1,90 @@
+{
+    "fileVersion": 0,
+    "serverMaxRevisionCounter": 16,
+    "sourceMembers": {
+        "CustomField__Todo__c.Completed__c": {
+            "memberType": "CustomField",
+            "serverRevisionCounter": 1,
+            "lastRetrievedFromServer": null,
+            "isNameObsolete": false
+        },
+        "CustomField__Todo__c.Description__c": {
+            "memberType": "CustomField",
+            "serverRevisionCounter": 2,
+            "lastRetrievedFromServer": null,
+            "isNameObsolete": false
+        },
+        "CustomObject__Todo__c": {
+            "memberType": "CustomObject",
+            "serverRevisionCounter": 3,
+            "lastRetrievedFromServer": 3,
+            "isNameObsolete": false
+        },
+        "Profile__Admin": {
+            "memberType": "Profile",
+            "serverRevisionCounter": 6,
+            "lastRetrievedFromServer": null,
+            "isNameObsolete": false
+        },
+        "ApexClass__TodoController": {
+            "memberType": "ApexClass",
+            "serverRevisionCounter": 7,
+            "lastRetrievedFromServer": 7,
+            "isNameObsolete": false
+        },
+        "LightningComponentBundle__todoListCmp": {
+            "memberType": "LightningComponentBundle",
+            "serverRevisionCounter": 8,
+            "lastRetrievedFromServer": 8,
+            "isNameObsolete": false
+        },
+        "LightningComponentResource__todoListCmp/todoListCmp.html": {
+            "memberType": "LightningComponentResource",
+            "serverRevisionCounter": 9,
+            "lastRetrievedFromServer": 9,
+            "isNameObsolete": false
+        },
+        "LightningComponentResource__todoListCmp/todoListCmp.js": {
+            "memberType": "LightningComponentResource",
+            "serverRevisionCounter": 10,
+            "lastRetrievedFromServer": 10,
+            "isNameObsolete": false
+        },
+        "LightningComponentResource__todoListCmp/todoListCmp.js-meta.xml": {
+            "memberType": "LightningComponentResource",
+            "serverRevisionCounter": 11,
+            "lastRetrievedFromServer": 11,
+            "isNameObsolete": false
+        },
+        "LightningComponentBundle__colorToggle": {
+            "memberType": "LightningComponentBundle",
+            "serverRevisionCounter": 12,
+            "lastRetrievedFromServer": 12,
+            "isNameObsolete": false
+        },
+        "LightningComponentResource__colorToggle/colorToggle.css": {
+            "memberType": "LightningComponentResource",
+            "serverRevisionCounter": 13,
+            "lastRetrievedFromServer": 13,
+            "isNameObsolete": false
+        },
+        "LightningComponentResource__colorToggle/colorToggle.js-meta.xml": {
+            "memberType": "LightningComponentResource",
+            "serverRevisionCounter": 14,
+            "lastRetrievedFromServer": 14,
+            "isNameObsolete": false
+        },
+        "LightningComponentResource__colorToggle/colorToggle.html": {
+            "memberType": "LightningComponentResource",
+            "serverRevisionCounter": 15,
+            "lastRetrievedFromServer": 15,
+            "isNameObsolete": false
+        },
+        "LightningComponentResource__colorToggle/colorToggle.js": {
+            "memberType": "LightningComponentResource",
+            "serverRevisionCounter": 16,
+            "lastRetrievedFromServer": 16,
+            "isNameObsolete": false
+        }
+    }
+}

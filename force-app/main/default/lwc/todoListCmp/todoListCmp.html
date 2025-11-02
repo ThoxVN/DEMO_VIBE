@@ -1,0 +1,38 @@
+<template>
+    <lightning-card title="Todo List" icon-name="utility:task">
+        <div class="slds-p-around_medium">
+            <div class="slds-grid slds-gutters slds-wrap">
+                <div class="slds-col slds-size_1-of-1 slds-medium-size_3-of-4">
+                    <lightning-datatable
+                        key-field="Id"
+                        data={rows}
+                        columns={columns}
+                        hide-checkbox-column
+                        show-row-number-column
+                        onrowaction={handleRowAction}>
+                    </lightning-datatable>
+                </div>
+                <div class="slds-col slds-size_1-of-1 slds-medium-size_1-of-4">
+                    <lightning-input
+                        type="text"
+                        label="Name"
+                        value={newName}
+                        onchange={handleNameChange}>
+                    </lightning-input>
+                    <lightning-textarea
+                        class="slds-m-top_small"
+                        label="Description"
+                        value={newDescription}
+                        onchange={handleDescChange}>
+                    </lightning-textarea>
+                    <lightning-button
+                        class="slds-m-top_small"
+                        label="Add Todo"
+                        onclick={handleAdd}
+                        variant="brand">
+                    </lightning-button>
+                </div>
+            </div>
+        </div>
+    </lightning-card>
+</template>

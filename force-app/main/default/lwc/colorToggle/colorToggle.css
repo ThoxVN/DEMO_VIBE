@@ -1,0 +1,6 @@
+/* Optional styling for the card area */
+:host {
+    display: block;
+}
+
+/* Box styles controlled by inline style from JS; keep CSS file to avoid CSS parser warnings */

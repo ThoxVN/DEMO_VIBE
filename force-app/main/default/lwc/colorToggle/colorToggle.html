@@ -1,0 +1,16 @@
+<template>
+    <div class="slds-p-around_medium">
+        <lightning-card title="Color Toggle" icon-name="utility:color_swatch">
+            <div class="slds-p-around_medium">
+                <div style={boxStyle}></div>
+            </div>
+            <div class="slds-p-around_medium">
+                <lightning-button
+                    label="Đổi màu"
+                    onclick={handleToggle}
+                    variant="brand"
+                ></lightning-button>
+            </div>
+        </lightning-card>
+    </div>
+</template>
