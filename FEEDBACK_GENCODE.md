@@ -137,8 +137,30 @@ Quá trình gen code đã trải qua nhiều thử nghiệm và điều chỉnh 
 
 Các vấn đề gặp phải chủ yếu liên quan đến:
 - Naming convention
-- Metadata validation
-- CLI environment
-- Test configuration
+- Validation metadata
+- Môi trường CLI
+- Cấu hình kiểm thử
 
 Tài liệu này sẽ là nguồn tham khảo cho các dự án tương tự trong tương lai.
+
+## Ghi Nhận Về Prompt và Tự Động Hóa
+
+### 1. Tự Động Sinh Test Cases
+- Đã áp dụng nguyên tắc sinh test tự động cho các phương thức Apex
+- Test coverage đạt > 80% cho tất cả các lớp Apex
+- Các test cases bao gồm:
+  - Trường hợp bình thường
+  - Trường hợp biên
+  - Xử lý lỗi
+  - Các tình huống đặc biệt
+
+### 2. Prompt Best Practices
+- Đã xây dựng tài liệu "Prompt Best Practices" để hướng dẫn cách tạo prompt hiệu quả
+- Áp dụng các nguyên tắc bảo mật, hiệu năng và chất lượng code
+- Cập nhật các kỹ thuật tối ưu hóa prompt cho việc sinh code Salesforce
+
+### 3. Tối Ưu Hóa Hiệu Năng
+- Áp dụng các kỹ thuật tối ưu hóa hiệu năng trong Apex code
+- Cải thiện quy trình xử lý chuỗi và tập hợp dữ liệu
+- Tối ưu hóa các truy vấn SOQL và xử lý batch
+- Đảm bảo code đáp ứng các giới hạn governor của Salesforce
